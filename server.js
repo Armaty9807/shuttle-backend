@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 3000;
 // ── Middleware ─────────────────────────────────────────────────────
 app.use(cors());
 app.use(express.json());
+app.use(express.static(__dirname));  // เสิร์ฟ shuttle_v3.html และไฟล์อื่นในโฟลเดอร์เดียวกัน
 
 // ── Supabase client ────────────────────────────────────────────────
 const supabase = createClient(
