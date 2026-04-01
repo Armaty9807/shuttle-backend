@@ -518,7 +518,7 @@ html, body { height: 100%; font-family: 'Sarabun', sans-serif; background: var(-
 // เปลี่ยน URL ด้านล่างเป็น URL ของ backend จริงหลัง deploy
 // ตัวอย่าง: 'https://shuttle-backend.up.railway.app'
 // ถ้า API_BASE = '' จะใช้ mock mode (ไม่ต้อง backend)
-const API_BASE = '';   // ← ใส่ URL backend ที่นี่
+const API_BASE = 'https://shuttle-backend-production.up.railway.app';
 
 async function apiCall(method, path, body) {
   if (!API_BASE) return null;  // mock mode
